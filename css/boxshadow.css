@@ -1,0 +1,32 @@
+/*
+    
+    INSTRUCTIONS
+
+    Using CSS properties alone, recreate this button: 
+
+        https://i.imgur.com/gnZnY.png. 
+
+    Spend no longer than 15 minutes on it, we don't 
+    expect it to be a perfect match. It's open book, 
+    feel free to hit Google but be prepared to 
+    explain your solution.
+
+*/
+a {
+    padding: 2px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: hsl(0, 0%, 30%);
+    text-transform: uppercase;
+    background: linear-gradient(white, gray); 
+    box-shadow:  0 0 0 3px hsl(0, 10%, 40%), 0 0 0 5px hsl(0, 0%, 80%), 0 0 0 6px white, 0 0 0 8px black;
+}
+
+a::before, a::after {
+  font-size: 1rem;
+  color: hsl(0, 0%, 30%);
+  content: "\f09b";
+	font-family: FontAwesome;
+}
+
+
