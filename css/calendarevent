@@ -1,0 +1,108 @@
+https://codepen.io/anon/pen/VWYEXv
+
+<div class="calendar-event">
+    <div class="cal-title">
+        <h1>Interview Scheduled</h1>
+    </div>
+    <table class="cal-body">
+    <tbody>  
+    <tr class="row">
+        <td class="left">location</td>
+        <td class="right">Room1</td>
+    </tr>
+
+    
+    <tr class="row">
+        <td class="left">invitees</td>
+        <td class="right invitees">Tom Jerry Kitty</td>
+    </tr> 
+    
+    <tr>
+        <td class="left">calendar</td>
+        <td class="right"><input class="cal-input"></input><div class="calendar-popup"><ul><li>Calendar</li><li>Tasks</li></ul></div></td>
+    </tr>
+   
+        <td class="left">alarm</td>
+        <td class="right">Room1</td>
+    </td>
+    
+        
+    <tr>
+        <td class="left">note</td>
+        <td class="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit ante, dictum ut eleifend in, viverra nec urna. Maecenas rutrum rutrum finibus. Pellentesque quam leo, consequat vitae sapien in, commodo ultricies purus. Maecenas a semper velit, et tempor ante. Ut egestas pulvinar arcu, eget tempus dui elementum et. Proin vehicula pulvinar bibendum. Aliquam facilisis tempor dui, et lobortis magna tempor et. Quisque ut dui velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra lacus libero, vitae efficitur tellus consectetur pulvinar. Fusce accumsan placerat magna et placerat. Suspendisse eget laoreet velit, id rutrum dolor. Donec posuere elit id feugiat iaculis.</td>
+    </tr>
+</tbody>
+    </table>
+    <div class="cal-footer">
+      <button>Maybe</button>
+      <button>Decline</button>
+      <button>Accept</button>
+    </div>
+</div>
+
+
+
+
+
+/* This is the code for the calendar detail popup here: https://i.imgur.com/R2f8oNH.png */
+
+.calendar-event {
+  --padding-small: 20px;
+  width: 350px;
+  background: linear-gradient(gray, silver);
+  box-sizing: border-box;
+}
+
+
+
+td {
+  vertical-align: top;
+}
+
+table {
+  display: block;
+  overflow-y: auto;
+  max-height: 150px;
+  padding: var(--padding-small);
+}
+
+
+
+h1 {    font-size: 20px;}
+
+.cal-title {
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    border-bottom: 1px solid black;
+    padding: var(--padding-small) 50px;
+    box-sizing: border-box;
+  }
+
+.invitees {
+   word-spacing: 50rem;
+}
+
+.calendar-popup {
+  display: none;
+}
+
+.cal-footer {
+  border-top: 1px solid black;
+  padding-top: var(--padding-small);
+  margin-top: 20px; 
+  padding-bottom: var(--padding-small);
+}
+
+  button {
+    padding: 0px 5px; 
+    width: calc(100%/3 - 10px);
+  }
+  
+button:last {
+   padding: 0px;
+}
+
+button:first-of-type {
+  margin-left: 10px;
+}
